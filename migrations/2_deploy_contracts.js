@@ -3,3 +3,4 @@ var Adoption = artifacts.require("Adoption");
 module.exports = function (deployer) {
   deployer.deploy = Adoption;
 };
+//migrar para a blockchain (Guanache) com truffle migrate
