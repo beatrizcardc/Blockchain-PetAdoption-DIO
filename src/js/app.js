@@ -68,7 +68,7 @@ App = {
   bindEvents: function () {
     $(document).on("click", ".btn-adopt", App.handleAdopt);
   },
-
+  //chamamos o contrato para marcar o pet como adotado
   markAdopted: function () {
     var adoptionInstance;
     App.contracts.Adoption.deployed()
