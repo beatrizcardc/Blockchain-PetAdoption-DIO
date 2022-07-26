@@ -5,7 +5,7 @@
     "picture": "images/scottish-terrier.jpeg",
     "age": 3,
     "breed": "Scottish Terrier",
-    "location": "Lisco, Alabama"
+    "location": "Búzios, RJ"
   },
   {
     "id": 1,
@@ -19,9 +19,9 @@
     "id": 2,
     "name": "Canela",
     "picture": "images/french-bulldog.jpeg",
-    "age": 2,
+    "age": 3,
     "breed": "French Bulldog",
-    "location": "Freeburn, Idaho"
+    "location": "Patos, PA"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "picture": "images/boxer.jpeg",
     "age": 2,
     "breed": "Boxer",
-    "location": "Camas, Pennsylvania"
+    "location": "Caxias do Sul, RS"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "picture": "images/caramelo.jpg",
     "age": 2,
     "breed": "SRD",
-    "location": "Vitória, Espírito Santo"
+    "location": "Vitória, ES"
   },
   {
     "id": 5,
@@ -45,7 +45,7 @@
     "picture": "images/srd.jpg",
     "age": 6,
     "breed": "SRD",
-    "location": "Niterói, Rio de Janeiro"
+    "location": "Niterói, RJ"
   },
   {
     "id": 6,
@@ -53,7 +53,7 @@
     "picture": "images/golden-retriever.jpeg",
     "age": 3,
     "breed": "Golden Retriever",
-    "location": "Soudan, Louisiana"
+    "location": "Porto Alegre, RS"
   },
   {
     "id": 7,
@@ -61,46 +61,46 @@
     "picture": "images/caramelo2.jpg",
     "age": 1,
     "breed": "SRD",
-    "location": "Salvador, Bahia"
+    "location": "Salvador, BA"
   },
   {
     "id": 8,
-    "name": "Lilica",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Honolulu, Hawaii"
+    "name": "Zulú",
+    "picture": "images/doberman.jpg",
+    "age": 5,
+    "breed": "Doberman",
+    "location": "Rio de Janeiro, RJ"
   },
   {
     "id": 9,
-    "name": "Jojo",
-    "picture": "images/boxer.jpeg",
-    "age": 3,
-    "breed": "Boxer",
-    "location": "Matheny, Utah"
+    "name": "Gungun",
+    "picture": "images/pastor.jpg",
+    "age": 1,
+    "breed": "Pastor Alemão",
+    "location": "Araxá, MG"
   },
   {
     "id": 10,
-    "name": "Paçoquinha",
-    "picture": "images/boxer.jpeg",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Tyhee, Indiana"
+    "name": "Biscoito",
+    "picture": "images/cookies.jpg",
+    "age": 4,
+    "breed": "SRD",
+    "location": "Jõao Pessoa, PA"
   },
   {
     "id": 11,
-    "name": "Dean",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Windsor, Montana"
+    "name": "Guga",
+    "picture": "images/poodle.jpg",
+    "age": 4,
+    "breed": "Poodle",
+    "location": "Brasília, DF"
   },
   {
     "id": 12,
     "name": "Gigi",
-    "picture": "images/french-bulldog.jpeg",
+    "picture": "images/poodle.jpg",
     "age": 3,
-    "breed": "French Bulldog",
-    "location": "Kingstowne, Nevada"
+    "breed": "Poodle",
+    "location": "Brasília, DF"
   }
 ]
