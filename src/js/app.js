@@ -51,7 +51,7 @@ App = {
   },
 
   //inicializar o smart contract
-
+  //métodos do contrato já compilado
   initContract: function () {
     $.getJSON("Adoption.json", function (data) {
       var AdoptionArtifact = data;
