@@ -92,7 +92,7 @@ App = {
         console.log(err.message);
       });
   },
-
+  //realiza a transação na Blockchain - handle
   handleAdopt: function (event) {
     event.preventDefault();
 
