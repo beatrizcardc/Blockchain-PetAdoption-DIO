@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pragma solidity ^0.5.0;  //o erro não tem problema
 
 //estrutura do contrato - Smart Contracts -
@@ -18,5 +19,26 @@ contract Adoption{
     return adopters;
 
   }
+=======
+pragma solidity ^0.5.0;
+
+contract Adoption {
+
+    address[16] public adopters;
+
+    // Adopting a pet
+    function adopt(uint petId) public returns (uint) {
+        require(petId >= 0 && petId <= 15);
+
+        adopters[petId] = msg.sender;
+
+        return petId;
+    }
+
+    // Retrieving the adopters
+    function getAdopters() public view returns (address[16] memory) {
+        return adopters;
+    }
+>>>>>>> 5465f83268963c2b655afc77e025bd825923363d
 
 }

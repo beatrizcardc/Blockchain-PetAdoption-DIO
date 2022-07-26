@@ -3,7 +3,7 @@ App = {
   contracts: {},
 
   init: async function () {
-    // Load pets. Carrega os pets
+    // Load pets.
     $.getJSON("../pets.json", function (data) {
       var petsRow = $("#petsRow");
       var petTemplate = $("#petTemplate");
@@ -23,42 +23,46 @@ App = {
     return await App.initWeb3();
   },
 
+  //Iniciando a aplicação com o Metamask
   initWeb3: async function () {
-    //integra Blockchain Ethereum com front-end JS
-    //verifica a instalação e inicia  comunicação com o metamask
-    //permite a interação da aplicação no desktop com o contrato
+    //verificar a instalação do Metamask
     if (window.ethereum) {
       App.web3Provider = window.ethereum;
       try {
-        //request account access
+        // Request account access
         await window.ethereum.request({ method: "eth_requestAccounts" });
       } catch (error) {
-        //user denied account access...
+        // User denied account access...
         console.error("User denied account access");
       }
     }
-    //Legacy dapp browsers...
+
+    // Legacy dapp browsers...
     else if (window.web3) {
       App.web3Provider = window.web3.currentProvider;
-    } else {
+    }
+    // If no injected web3 instance is detected, fall back to Ganache
+    else {
       App.web3Provider = new Web3.providers.HttpProvider(
         "http://localhost:7545"
       );
     }
-    web3 = new Web3(App.webProvider);
+    web3 = new Web3(App.web3Provider);
 
     return App.initContract();
   },
 
-  //inicializar o smart contract
-  //métodos do contrato já compilado
+  //Incializando o contrato inteligente
   initContract: function () {
     $.getJSON("Adoption.json", function (data) {
+      // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var AdoptionArtifact = data;
-      App.contracts.Adoption = TruffleContract(AoptionArtifact);
+      App.contracts.Adoption = TruffleContract(AdoptionArtifact);
 
+      // Set the provider for our contract
       App.contracts.Adoption.setProvider(App.web3Provider);
 
+      // Use our contract to retrieve and mark the adopted pets
       return App.markAdopted();
     });
 
@@ -68,9 +72,10 @@ App = {
   bindEvents: function () {
     $(document).on("click", ".btn-adopt", App.handleAdopt);
   },
-  //chamamos o contrato para marcar o pet como adotado
+
   markAdopted: function () {
     var adoptionInstance;
+
     App.contracts.Adoption.deployed()
       .then(function (instance) {
         adoptionInstance = instance;
@@ -78,13 +83,13 @@ App = {
         return adoptionInstance.getAdopters.call();
       })
       .then(function (adopters) {
-        for (i = 0; i < adopters.lenght; i++) {
+        for (i = 0; i < adopters.length; i++) {
           if (adopters[i] !== "0x0000000000000000000000000000000000000000") {
-            $(".panel1-pet")
+            $(".panel-pet")
               .eq(i)
               .find("button")
               .text("Success")
-              .attr("disable", true);
+              .attr("disabled", true);
           }
         }
       })
@@ -92,7 +97,7 @@ App = {
         console.log(err.message);
       });
   },
-  //realiza a transação na Blockchain - handle
+
   handleAdopt: function (event) {
     event.preventDefault();
 

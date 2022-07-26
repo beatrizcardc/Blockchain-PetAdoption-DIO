@@ -10,10 +10,10 @@
   {
     "id": 1,
     "name": "Banana",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Tooleville, West Virginia"
+    "picture": "images/banana.jpg",
+    "age": 2,
+    "breed": "SRD",
+    "location": "Campinas, São Paulo"
   },
   {
     "id": 2,
@@ -33,19 +33,19 @@
   },
   {
     "id": 4,
-    "name": "Malu",
-    "picture": "images/french-bulldog.jpeg",
+    "name": "Caramelo",
+    "picture": "images/caramelo.jpg",
     "age": 2,
-    "breed": "French Bulldog",
-    "location": "Gerber, South Dakota"
+    "breed": "SRD",
+    "location": "Vitória, Espírito Santo"
   },
   {
     "id": 5,
-    "name": "Tessa",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Innsbrook, Illinois"
+    "name": "Tigre",
+    "picture": "images/srd.jpg",
+    "age": 6,
+    "breed": "SRD",
+    "location": "Niterói, Rio de Janeiro"
   },
   {
     "id": 6,
@@ -57,11 +57,11 @@
   },
   {
     "id": 7,
-    "name": "Caramelo",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Jacksonwald, Palau"
+    "name": "Neném",
+    "picture": "images/caramelo2.jpg",
+    "age": 1,
+    "breed": "SRD",
+    "location": "Salvador, Bahia"
   },
   {
     "id": 8,
