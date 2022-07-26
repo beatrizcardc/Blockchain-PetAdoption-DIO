@@ -4,6 +4,9 @@ App = {
 
   init: async function() {
     // Load pets.
+
+
+
     $.getJSON('../pets.json', function(data) {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
@@ -24,17 +27,41 @@ App = {
   },
 
   initWeb3: async function() {
-    /*
-     * Replace me...
-     */
+    //integra Blockchain Ethereum com front-end JS
+    //verificar instalação metamask
+
+    if (window.ethereum){}{
+      App.web3Provider = window.ethereum;
+      try{
+        //request account access
+        await window.ethereum.request({method: "eth_requestAccounts"});;
+
+      }catch (error) {
+        //user denied account access...
+        console.error("User denied account access")
+      }
+    }
+
+    //Legacy dapp browsers...
+    else if (window.web3) {
+      App.web3Provider = window.web3.currentProvider;
+
+    }
 
     return App.initContract();
   },
 
   initContract: function() {
-    /*
-     * Replace me...
-     */
+    $.getJSON('Adoption.json', function(data){
+      var AdoptionArtifact = data;
+      App.contracts.Adoption = TruffleContract(AoptionArtifact);
+
+      App.contracts.Adoption.setProvider(App.web3Provider);
+
+      return App.markAdopted();
+    });
+
+    
 
     return App.bindEvents();
   },
@@ -44,10 +71,22 @@ App = {
   },
 
   markAdopted: function() {
-    /*
-     * Replace me...
-     */
-  },
+    var adoptionInstance;
+    App.contracts.Adoption.deployed().then(function(instance) {
+      adoptionInstance = instance;
+
+      return adoptionInstance.getAdopters.call();
+    }).then(function(adopters) {
+        for (i = 0; i < adopters.lenght; i++) {
+          $('.panel1-pet').eq(i).find('button').text('Success').attr('disable', true);
+        }
+      }
+    }).catch(function(err) {
+      console.log(err.message);
+    });
+    },
+
+  
 
   handleAdopt: function(event) {
     event.preventDefault();
