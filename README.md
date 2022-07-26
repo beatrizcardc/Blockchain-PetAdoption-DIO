@@ -1,30 +1,21 @@
-# dio-blockchain-for-devs
+# **Sistema de adoção de pets com Blockchain**
 
-<<<<<<< HEAD
-dio-blockchain-for-devs
-Instalar o NodeJS com NPM: https://nodejs.org/en/download/
+## Este Projeto faz parte da Formação Blockchain que estou realizando na DIO
 
-Instalar o VS Code: https://code.visualstudio.com/download
-Instalar os pacotes do NPM: npm i
+### Links Úteis para Instalações:package:
 
-Instalar o Framework Truffle: npm i -g truffle
+:diamond_shape_with_a_dot_inside: Instalar o NodeJS com NPM: https://nodejs.org/en/download/
 
-Download do Ganache: https://trufflesuite.com/ganache/
+:diamond_shape_with_a_dot_inside: Instalar o VS Code: https://code.visualstudio.com/download
 
-Instalação do Metamask: https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+:diamond_shape_with_a_dot_inside:Download do Ganache: https://trufflesuite.com/ganache/
 
-Extensão do Chrome para gerenciamento das carteiras
-=======
-## Instalar o NodeJS com NPM: https://nodejs.org/en/download/
+:diamond_shape_with_a_dot_inside:Instalação do Metamask: https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en -- Extensão do Chrome para gerenciamento das carteiras:diamond_shape_with_a_dot_inside:
 
-## Instalar o VS Code: https://code.visualstudio.com/download
+:diamond_shape_with_a_dot_inside:Instalar os pacotes do NPM: npm i
 
-## Instalar os pacotes do NPM: npm i
+:diamond_shape_with_a_dot_inside:Instalar o Framework Truffle: npm i -g truffle
 
-## Instalar o Framework Truffle: npm i -g truffle
+:diamond_shape_with_a_dot_inside:Instalar os pacotes do NPM: npm i
 
-## Download do Ganache: https://trufflesuite.com/ganache/
-
-## Instalação do Metamask: https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
-
->>>>>>> 5465f83268963c2b655afc77e025bd825923363d
+:diamond_shape_with_a_dot_inside:Instalar o lite -server no VSCode: npm install -g lite-server
